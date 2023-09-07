@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale - Buy The Best</title>
+
+    <!---------------------------- Favion Link ---------------------------->
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
+
+    <!---------------------------- Boxicons Link ---------------------------->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!---------------------------- Google Font Link ---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---------------------------- Daisy Khala CDN ---------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!---------------------------- tailwind CSS CDN ---------------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!---------------------------- Custom CSS For Tailwind ---------------------------->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+
+    <!---------------------------- External CSS Link ---------------------------->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-------------------------- X -------------------------->
+  </head>
+  <body>
+    <section class="bg-[#F9F6E2]">
+      <div class="max-w-screen-xl mx-5 py-7 lg:py-0 lg:mx-auto">
+        <div class="grid gap-10 lg:gap-5 md:grid-cols-2 md:py-9">
+          <!-- left side -->
+          <div
+            class="text-center flex flex-col gap-8 lg:gap-10 items-center justify-center"
+          >
+            <p class="text-lg lg:text-xl">---SALE FEVER---</p>
+            <h1 class="text-[28px] lg:text-5xl xl:text-6xl font-bold">
+              Purchase TK 200 or<br />above & get
+              <span class="text-[#E527B2]">20% off</span>
+            </h1>
+            <p class="text-lg">
+              Use Promo Code
+              <span
+                class="bg-[#E527B2] text-white px-2 py-1 lg:px-4 lg:py-3 rounded-lg"
+                >SELL200</span
+              >
+            </p>
+          </div>
+
+          <!-- right side -->
+          <div>
+            <img src="./images/Summer 1.png" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#F8F8F8] pb-40 pt-40">
+      <div class="max-w-screen-xl mx-5 py-7 lg:py-0 xl:mx-auto">
+        <h1 class="text-center lg:text-left text-4xl font-bold mb-5">
+            Kitchenware
+          </h1>
+        <div class="flex flex-col lg:flex-row justify-between lg:gap-5">
+            
+          <!-- left side -->
+          <div class="lg:w-[900px]">
+            <!-- kitchen -->
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+              <!-- 1 -->
+              <div onclick="handleClikBtn('Table Spoons', 39)" id="table-spoons" class="bg-white p-5 rounded-lg cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod1.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Table Spoons</p>
+                  <p class="text-xl"><span id="table-spoons-price">39.00</span> Tk</p>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div onclick="handleClikBtn('Plates', 25)"  id="plates" class="bg-white p-5 rounded-lg cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod2.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Plates</p>
+                  <p class="text-xl"><span id="plates-price">25.00</span> Tk</p>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div  onclick="handleClikBtn('Home Cooker', 49)"  id="home-cooker" class="bg-white p-5 rounded-lg cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod3.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Home Cooker</p>
+                  <p class="text-xl"><span id="home-cooker-price">49.00</span> Tk</p>
+                </div>
+              </div>
+              <!-- x -->
+            </div>
+
+            <!-- sports -->
+            <h1 class="text-center lg:text-left text-4xl font-bold py-7">
+              Sportswear
+            </h1>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+              <!-- 1 -->
+              <div onclick="handleClikBtn('Sports Black Cap', 49)"  id="sports-cap" class="bg-white p-5 rounded-lg md:mb-10 cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod4.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Sports Black Cap</p>
+                  <p class="text-xl"><span id="sports-cap-Price">49.00</span> Tk</p>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div  onclick="handleClikBtn('Full Jersey Set', 69)"  id="Jersey" class="bg-white p-5 rounded-lg md:mb-10 cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod5.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Full Jersey Set</p>
+                  <p class="text-xl"><span id="jersey-price">69.00</span> Tk</p>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div onclick="handleClikBtn('Sports cates', 159)"  id="sportsCates" class="bg-white p-5 rounded-lg mb-10 cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod6.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Sports cates</p>
+                  <p class="text-xl"><span id="sportscatesPrice">159.00</span> Tk</p>
+                </div>
+              </div>
+              <!-- x -->
+            </div>
+            <!-- x -->
+
+            <!-- Furniture -->
+            <h1 class="text-center lg:text-left text-4xl font-bold py-7">
+              Fruniture
+            </h1>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+              <!-- 1 -->
+              <div onclick="handleClikBtn('Single Relax Chair', 185)"  id="sports-cap" class="bg-white p-5 rounded-lg md:mb-10 cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod7.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Single Relax Chair</p>
+                  <p class="text-xl"><span id="sports-cap-Price">185.00</span> Tk</p>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div  onclick="handleClikBtn('Children play', 299)"  id="Jersey" class="bg-white p-5 rounded-lg md:mb-10 cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod8.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Children play</p>
+                  <p class="text-xl"><span id="jersey-price">299.00</span> Tk</p>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div onclick="handleClikBtn('Flexible Sofa', 339)"  id="sportsCates" class="bg-white p-5 rounded-lg mb-10 cursor-pointer">
+                <div class="bg-[#1111110d]">
+                  <img class="py-4 mx-auto" src="./images/prod9.png" alt="" />
+                </div>
+                <div class="text-center space-y-2 py-5">
+                  <!-- star -->
+                  <div class="text-2xl mt-4">
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bxs-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                    <i class="bx bx-star text-[#FFC107]"></i>
+                  </div>
+                  <p class="text-xl font-bold">Flexible Sofa</p>
+                  <p class="text-xl"><span id="sportscatesPrice">339.00</span> Tk</p>
+                </div>
+              </div>
+              <!-- x -->
+            </div>
+            <!-- x -->
+          </div>
+
+          <!-- right side -->
+          <div class="">
+            <div class="max-w-[600px] mx-auto sticky top-0">
+              <!-- coupon div -->
+              <div class="bg-white p-6 rounded-lg mb-5">
+                <p class="text-2xl mb-5">Have coupon?</p>
+                <div class="flex">
+                  <input id="inputFiled" class="py-3 rounded-l-lg pl-4 border border-[#a9a9a9] w-full" type="text" id="" placeholder="Coupon code" />
+                  <button id="apply" class="bg-[gray] px-3 text-white rounded-r-lg cursor-not-allowed" disabled>Apply</button>
+                </div>
+              </div>
+
+              <!-- make purchase div -->
+              <div>
+                <!-- price -->
+                <div class="bg-white p-5">
+                    <!-- list space -->
+                    <div id="calculationEntry">
+                        
+                    </div>
+                    <hr class="my-5"/>
+                    <!-- price -->
+                    <div>
+                      <p class="text-xl"><span class="font-bold">Total price:</span> <span id="total">0.00</span>Tk</p>
+                      <p class="text-xl"><span class="font-bold">Discount:</span> <span id="discount">0.00</span>Tk</p>
+                      <p class="text-xl"><span class="font-bold">Total:</span> <span id="totalTotal">0.00</span>Tk</p>
+                    </div>
+                    <hr class="mt-5"/>
+                    <button onclick="my_modal_5.showModal()" disabled id="make-purchase" class="bg-[gray] text-white w-full py-3 rounded-lg relative top-10 cursor-not-allowed" >Make Purchase</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <img class="mx-auto pb-3 pt-4" src="./images/congo.png" alt="">
+    <h1 class="font-bold pt-4 text-center text-3xl">Congratulations</h1>
+    <p class="py-4 text-center">Your Purchase the product</p>
+    <div class="text-center mx-auto pb-4 pt-4">
+      <button type="submit" class="">
+        <a class="bg-[#E527B2] py-4 px-5 text-white rounded-md font-bold mx-auto" href="./index.html">Go Home</a>
+      </button>
+    </div>
+  </form>
+</dialog>
+
+
+    <!-- Javascript -->
+    <script src="./index.js"></script>
+  </body>
+</html>
